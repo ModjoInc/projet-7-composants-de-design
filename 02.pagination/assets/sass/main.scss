@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$font:    'Open Sans', sans-serif;
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+}
+
+form {
+  width: 600Px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 15px;
+  }
+
+  @for $index from 1 through 6 {
+    h#{$index}{
+    font-family: $font;
+    }
+  }
+
+  form .grid {
+    width: 100%;
+  }
+
+  [class*='col-'] {
+    float: left;
+    padding-right: 10px;
+  }
+
+  [class*='col-']:last-of-type {
+    padding-right: 0;
+  }
+
+  .col-1 {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .col-1-2 {
+    width: 50%;
+  }
+
+  .grid:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #9a9a9a;
+  }
+
+  h2 {
+    font-size: 1em;
+    padding-top: 10px;
+    border-top: 1px dotted #9a9a9a;
+  }
+
+  h3 {
+    font-size: 0.8em;
+    margin-bottom: 1px;
+    margin-left: 2px;
+  }
+
+  p {
+    font-family: $font;
+    font-size: 0.7em;
+    margin-top: 1px;
+    margin-left: 2px;
+  }
+
+  #day, #month {
+    width: 40px;
+  }
+
+  #year {
+    width: 60px;
+  }
+
+  #first_name {
+    width: 70px;
+  }
+
+  #last_name {
+    width: 120px;
+  }
+
+  #gender {
+    width: 270px;
+  }
+
+  #S3 {
+    width: 30px;
+  }
+
+  #S4 {
+    width: 40px;
+  }
