@@ -1,60 +1,102 @@
-/*
-Error: File to import not found or unreadable: reset.
-        on line 3 of sass/style.scss
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-1: $font-stack:    Helvetica, sans-serif;
-2: $primary-color: #333;
-3: @import 'reset';
-4: 
-5: @mixin border-radius($radius) {
-6:   -webkit-border-radius: $radius;
-7:   -moz-border-radius: $radius;
-8:   -ms-border-radius: $radius;
+body {
+  background-color: #ddd; }
 
-Backtrace:
-sass/style.scss:3
-/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:67:in `rescue in import'
-/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:45:in `import'
-/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:28:in `imported_file'
-/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:37:in `css_import?'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:311:in `visit_import'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:166:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:186:in `visit_root'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:157:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:378:in `_render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:295:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:471:in `on_file_changed'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:328:in `block in watch'
-/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
-/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: reset.\A         on line 3 of sass/style.scss\A \A 1: $font-stack:    Helvetica, sans-serif;\A 2: $primary-color: #333;\A 3: @import 'reset';\A 4: \A 5: @mixin border-radius($radius) {\A 6:   -webkit-border-radius: $radius;\A 7:   -moz-border-radius: $radius;\A 8:   -ms-border-radius: $radius;"; }
+form {
+  width: 600Px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 15px; }
+
+h1 {
+  font-family: "Open Sans", sans-serif; }
+
+h2 {
+  font-family: "Open Sans", sans-serif; }
+
+h3 {
+  font-family: "Open Sans", sans-serif; }
+
+h4 {
+  font-family: "Open Sans", sans-serif; }
+
+h5 {
+  font-family: "Open Sans", sans-serif; }
+
+h6 {
+  font-family: "Open Sans", sans-serif; }
+
+form .grid {
+  width: 100%; }
+
+[class*='col-'] {
+  float: left;
+  padding-right: 10px; }
+
+[class*='col-']:last-of-type {
+  padding-right: 0; }
+
+.col-1 {
+  width: 100%; }
+
+input {
+  width: 100%; }
+
+.col-1-2 {
+  width: 50%; }
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+h1 {
+  font-size: 1.2em;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #9a9a9a; }
+
+h2 {
+  font-size: 1em;
+  padding-top: 10px;
+  border-top: 1px dotted #9a9a9a; }
+
+h3 {
+  font-size: 0.8em;
+  margin-bottom: 1px;
+  margin-left: 2px; }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7em;
+  margin-top: 1px;
+  margin-left: 2px; }
+
+#day, #month {
+  width: 40px; }
+
+#year {
+  width: 60px; }
+
+#first_name {
+  width: 70px; }
+
+#last_name {
+  width: 120px; }
+
+#gender {
+  width: 270px; }
+
+#S3 {
+  width: 30px; }
+
+#S4 {
+  width: 40px; }
+
+/*# sourceMappingURL=style.css.map */
