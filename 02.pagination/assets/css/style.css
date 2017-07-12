@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -7,96 +7,47 @@
 body {
   background-color: #ddd; }
 
-form {
-  width: 600Px;
-  margin: 0 auto;
-  margin-top: 30px;
-  background-color: #fff;
-  border: 1px solid black;
-  padding: 15px; }
-
-h1 {
-  font-family: "Open Sans", sans-serif; }
-
-h2 {
-  font-family: "Open Sans", sans-serif; }
-
-h3 {
-  font-family: "Open Sans", sans-serif; }
-
-h4 {
-  font-family: "Open Sans", sans-serif; }
-
-h5 {
-  font-family: "Open Sans", sans-serif; }
-
-h6 {
-  font-family: "Open Sans", sans-serif; }
-
-form .grid {
-  width: 100%; }
-
-[class*='col-'] {
-  float: left;
-  padding-right: 10px; }
-
-[class*='col-']:last-of-type {
-  padding-right: 0; }
-
-.col-1 {
-  width: 100%; }
-
-input {
-  width: 100%; }
-
-.col-1-2 {
-  width: 50%; }
-
-.grid:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-h1 {
-  font-size: 1.2em;
-  padding-bottom: 10px;
-  border-bottom: 1px dotted #9a9a9a; }
-
-h2 {
-  font-size: 1em;
-  padding-top: 10px;
-  border-top: 1px dotted #9a9a9a; }
-
-h3 {
-  font-size: 0.8em;
-  margin-bottom: 1px;
-  margin-left: 2px; }
-
-p {
+footer {
+  width: 600px;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.7em;
-  margin-top: 1px;
-  margin-left: 2px; }
+  font-size: 0.8em;
+  text-align: center;
+  margin: 0 auto;
+  display: grid;
+  border: 1px solid #777;
+  background-color: #fff;
+  grid-template-columns: auto;
+  grid-template-areas: ". on tw tw th fo fo fo fo . ."; }
 
-#day, #month {
-  width: 40px; }
+ul {
+  padding: 10px 0 10px 0;
+  margin: 20px 0px; }
 
-#year {
-  width: 60px; }
+li {
+  display: inline;
+  font-size: 1em;
+  color: #777;
+  padding: 5px 25px; }
 
-#first_name {
-  width: 70px; }
+.two li, .four li {
+  color: #fff;
+  background-color: #5D616A;
+  border-radius: 5px; }
 
-#last_name {
-  width: 120px; }
+.four li:nth-child(2) {
+  background-color: #4D96E8; }
 
-#gender {
-  width: 270px; }
+.one {
+  grid-area: on; }
 
-#S3 {
-  width: 30px; }
+.two {
+  grid-area: tw; }
 
-#S4 {
-  width: 40px; }
+.three {
+  grid-area: th;
+  margin: 0 auto; }
+
+.four {
+  grid-area: fo; }
 
 /*# sourceMappingURL=style.css.map */

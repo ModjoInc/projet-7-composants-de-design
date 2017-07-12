@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 $font:    'Open Sans', sans-serif;
 
 *, *:after, *:before {
@@ -11,101 +11,55 @@ body {
   background-color: #ddd;
 }
 
-form {
-  width: 600Px;
+footer {
+  width: 600px;
+  font-family: $font;
+  font-size: 0.8em;
+  text-align: center;
   margin: 0 auto;
-  margin-top: 30px;
+  display: grid;
+  border: 1px solid #777;
   background-color: #fff;
-  border: 1px solid black;
-  padding: 15px;
-  }
+  grid-template-columns: auto;
+  grid-template-areas:
+   ". on tw tw th fo fo fo fo . .";
+}
 
-  @for $index from 1 through 6 {
-    h#{$index}{
-    font-family: $font;
-    }
-  }
+ul {
+  padding: 10px 0 10px 0;
+  margin : 20px 0px;
+}
 
-  form .grid {
-    width: 100%;
-  }
+li {
+  display: inline;
+  font-size: 1em;
+  color: #777;
+  padding: 5px 25px;
+}
 
-  [class*='col-'] {
-    float: left;
-    padding-right: 10px;
-  }
+.two li, .four li {
+  color: #fff;
+  background-color: #5D616A;
+  border-radius: 5px;
+}
+.four li:nth-child(2) {
+  background-color: #4D96E8;
+}
 
-  [class*='col-']:last-of-type {
-    padding-right: 0;
-  }
+.one {
+  grid-area: on;
+}
 
-  .col-1 {
-    width: 100%;
-  }
+.two {
+  grid-area: tw;
 
-  input {
-    width: 100%;
-  }
+}
 
-  .col-1-2 {
-    width: 50%;
-  }
+.three {
+  grid-area: th;
+  margin: 0 auto;
+}
 
-  .grid:after {
-  content: "";
-  display: table;
-  clear: both;
-  }
-
-  h1 {
-    font-size: 1.2em;
-    padding-bottom: 10px;
-    border-bottom: 1px dotted #9a9a9a;
-  }
-
-  h2 {
-    font-size: 1em;
-    padding-top: 10px;
-    border-top: 1px dotted #9a9a9a;
-  }
-
-  h3 {
-    font-size: 0.8em;
-    margin-bottom: 1px;
-    margin-left: 2px;
-  }
-
-  p {
-    font-family: $font;
-    font-size: 0.7em;
-    margin-top: 1px;
-    margin-left: 2px;
-  }
-
-  #day, #month {
-    width: 40px;
-  }
-
-  #year {
-    width: 60px;
-  }
-
-  #first_name {
-    width: 70px;
-  }
-
-  #last_name {
-    width: 120px;
-  }
-
-  #gender {
-    width: 270px;
-  }
-
-  #S3 {
-    width: 30px;
-  }
-
-  #S4 {
-    width: 40px;
-  }
+.four {
+  grid-area: fo;
+}
