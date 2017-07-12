@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+$font:    'Open Sans', sans-serif;
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  width: 1150px;
+  height: 450px;
+  margin: 100px auto;
+  display: grid;
+  background-color: #fff;
+  color: #606060;
+  font-family: $font;
+  grid-template-areas:
+  ". . . ti ti ti ti ti pl"
+  ". . . i1 i2 i3 i4 i5 ar";
+}
+
+@for $index from 1 through 5 {
+  .img#{$index}{
+        padding: 10px 2px;
+        width: 190px;
+      .crop {
+        width: 190px;
+        height: 290px;
+        overflow: hidden;
+      }
+      img {
+        width: 800px;
+        margin: -75px 0 0 -100px;
+      }
+  }
+}
+h1 {
+  margin: 10px 10px;
+  font-size: 1.5em;
+}
+p {
+  font-size: 0.8em;
+  font-family: $font;
+}
+.titre {
+  grid-area: ti;
+}
+.plus {
+  grid-area: pl;
+  padding-right: 10px;
+}
+.img1{
+  grid-area: i1;
+}
+.img2{
+  grid-area: i2;
+}
+.img3{
+  grid-area: i3;
+}
+.img4{
+  grid-area: i4;
+}
+.img5{
+  grid-area: i5;
+}
+.arrow{
+  grid-area: ar;
+  align-self: center;
+}
