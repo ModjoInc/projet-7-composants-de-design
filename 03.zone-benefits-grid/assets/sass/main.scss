@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+$font:    'Open Sans', sans-serif;
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  width: 1100px;
+  height: 370px;
+  font-family: $font;
+  font-size: 0.8em;
+  margin: 0 auto;
+  border: 1px solid #777;
+  background-color: #fff;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+   ". gri gui gii npi ."
+   ". gr gu gi np .";
+  justify-items: center;
+   padding: 50px 40px;
+}
+
+h2 {
+  color: #a1a1a1;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1em;
+  color: #4b4b4b;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+.gruntImg {
+  grid-area: gri;
+  align-self: center;
+  img {
+    width: 150px;
+  }
+}
+
+.gulpImg {
+  grid-area: gui;
+  align-self: center;
+  img {
+    height: 150px;
+  }
+}
+
+
+.gitImg {
+  grid-area: gii;
+  align-self: center;
+  img {
+    width: 150px;
+  }
+}
+
+.npmImg {
+  grid-area: npi;
+  align-self: center;
+  img {
+    width: 150px;
+  }
+}
+
+.grunt {
+  grid-area: gr;
+  padding: 10px 20px;
+}
+
+.gulp {
+  grid-area: gu;
+  padding: 10px 20px;
+
+}
+
+.git {
+  grid-area: gi;
+  padding: 10px 20px;
+}
+
+.npm {
+  grid-area: np;
+  padding: 10px 20px;
+}
