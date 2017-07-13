@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700");
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #000; }
+
+.container {
+  background-color: #fff;
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 2fr 4fr; }
+
+.news1 {
+  grid-area: news1; }
+
+.news2 {
+  grid-area: news2; }
+
+.news3 {
+  grid-area: news3; }
+
+.news4 {
+  grid-area: news4; }
+
+.news5 {
+  grid-area: news5; }
+
+.news6 {
+  grid-area: news6; }
+
+/*# sourceMappingURL=main.css.map */
