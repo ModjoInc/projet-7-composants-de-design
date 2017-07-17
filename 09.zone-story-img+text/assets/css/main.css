@@ -1,32 +1,49 @@
-@import url("https://fonts.googleapis.com/css?family=Oxygen:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
-  background-color: #000;
-  font-family: "Oxygen", sans-serif; }
+  background-color: #222;
+  font-family: "Open Sans", sans-serif; }
 
 .container {
   background-color: #fff;
   display: grid;
-  width: 960px;
+  width: 1100px;
   margin: 0 auto;
+  margin-top: 125px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "win img"; }
 
-h1 {
-  font-size: 1.5em;
-  font-weight: 700;
-  border-bottom: 1px solid #4d4c4c;
-  padding: 50px 0;
-  margin-left: -20px; }
-
 .win {
-  grid-area: win; }
+  grid-area: win;
+  align-self: center;
+  padding: 0 40px; }
+  .win button {
+    font-family: inherit;
+    background-color: #348187;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff; }
+  .win h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #484848;
+    margin-bottom: 10px; }
+  .win p {
+    font-size: 1.1em;
+    color: #818181;
+    line-height: 1.5em;
+    width: 90%; }
 
 .image {
   grid-area: img; }
+  .image img {
+    width: 100%;
+    padding: 30px 25px; }
 
 /*# sourceMappingURL=main.css.map */
