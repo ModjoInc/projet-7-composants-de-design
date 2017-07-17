@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+$font:    'Open Sans', sans-serif;
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  font-family: $font;
+}
+
+.container {
+  background-color: #fff;
+  display: grid;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 125px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  ". . . . digg"
+  "content content content content digg"
+  "content content content content ."
+  "content content content content .";
+  .content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+    "sort1 article1"
+    "sort2 article2";
+    padding: 10px;
+    @for $i from 1 through 2 {
+      .sort#{$i}{
+        grid-area: sort#{$i};
+        justify-self: right;
+        font-size: 3em;
+        padding-right: 5px;
+        color: #ededed;
+      }
+      .article#{$i} {
+        grid-area: article#{$i};
+        padding-bottom: 10px;
+        h2 {
+          color: #636772;
+          font-size: 0.8em;
+        }
+        p {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+  .digg {
+    grid-area: digg;
+    padding: 10px;
+    display: grid;
+    grid-template-areas:
+    "counter"
+    "diggIt";
+    .counter {
+      grid-area: counter;
+      align-self: center;
+      justify-self: center;
+      padding: 15px 10px;
+      border: none;
+      border-radius: 5px 0 5px 0;
+      background: linear-gradient(to bottom, #fff5a0 0%,#fef6d2 100%);
+      margin-bottom: -10px;
+      font-size: 0.8em;
+      text-align: center;
+      strong {
+        font-weight: 700;
+        font-size: 1.5em;
+        color: #636772;
+      }
+    }
+    .diggIt {
+      grid-area: diggIt;
+      padding: 10px;
+      button {
+        background-color: #fff;
+        color: #51597f;
+        font-weight: 700;
+        border: 1px solid #636772;
+        border-radius: 5px 0 5px 0;
+        padding: 5px;
+        margin-top: -10px;
+      }
+    }
+  }
+}
