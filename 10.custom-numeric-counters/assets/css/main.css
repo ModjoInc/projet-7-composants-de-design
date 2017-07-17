@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700");
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
   background-color: #222;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Source Serif Pro", serif; }
 
 .container {
   background-color: #fff;
@@ -19,37 +19,40 @@ body {
   .container .content {
     grid-area: content;
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-areas: "sort1 article1" "sort2 article2";
-    padding: 10px; }
+    grid-template-columns: 1fr 7fr;
+    grid-template-areas: "sort1 article1" "sort2 article2"; }
+    .container .content a {
+      text-decoration: none; }
     .container .content .sort1 {
       grid-area: sort1;
       justify-self: right;
       font-size: 3em;
-      padding-right: 5px;
+      margin-left: 0px;
+      padding-right: 10px;
       color: #ededed; }
     .container .content .article1 {
       grid-area: article1;
-      padding-bottom: 10px; }
+      padding-bottom: 20px; }
       .container .content .article1 h2 {
-        color: #636772;
-        font-size: 0.8em; }
+        color: #636772; }
       .container .content .article1 p {
-        font-size: 0.8em; }
+        font-size: 0.9em;
+        line-height: 1.2em; }
     .container .content .sort2 {
       grid-area: sort2;
       justify-self: right;
       font-size: 3em;
-      padding-right: 5px;
+      margin-left: 0px;
+      padding-right: 10px;
       color: #ededed; }
     .container .content .article2 {
       grid-area: article2;
-      padding-bottom: 10px; }
+      padding-bottom: 20px; }
       .container .content .article2 h2 {
-        color: #636772;
-        font-size: 0.8em; }
+        color: #636772; }
       .container .content .article2 p {
-        font-size: 0.8em; }
+        font-size: 0.9em;
+        line-height: 1.2em; }
   .container .digg {
     grid-area: digg;
     padding: 10px;
@@ -66,10 +69,15 @@ body {
       margin-bottom: -10px;
       font-size: 0.8em;
       text-align: center; }
-      .container .digg .counter strong {
-        font-weight: 700;
-        font-size: 1.5em;
-        color: #636772; }
+      .container .digg .counter p {
+        font-family: Arial, sans-serif;
+        font-size: 0.8em;
+        color: #666; }
+        .container .digg .counter p strong {
+          letter-spacing: -0.1em;
+          font-weight: 700;
+          font-size: 2em;
+          color: #636772; }
     .container .digg .diggIt {
       grid-area: diggIt;
       padding: 10px; }

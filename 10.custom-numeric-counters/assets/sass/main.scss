@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-$font:    'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+$font:    'Source Serif Pro', serif;
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -18,6 +18,7 @@ body {
   width: 600px;
   margin: 0 auto;
   margin-top: 125px;
+
   grid-template-columns: 1fr;
   grid-template-areas:
   ". . . . digg"
@@ -27,28 +28,31 @@ body {
   .content {
     grid-area: content;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 7fr;
     grid-template-areas:
     "sort1 article1"
     "sort2 article2";
-    padding: 10px;
+    a {
+      text-decoration: none;
+    }
     @for $i from 1 through 2 {
       .sort#{$i}{
         grid-area: sort#{$i};
         justify-self: right;
         font-size: 3em;
-        padding-right: 5px;
+        margin-left: 0px;
+        padding-right: 10px;
         color: #ededed;
       }
       .article#{$i} {
         grid-area: article#{$i};
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         h2 {
           color: #636772;
-          font-size: 0.8em;
         }
         p {
-          font-size: 0.8em;
+          font-size: 0.9em;
+          line-height: 1.2em;
         }
       }
     }
@@ -71,10 +75,16 @@ body {
       margin-bottom: -10px;
       font-size: 0.8em;
       text-align: center;
-      strong {
-        font-weight: 700;
-        font-size: 1.5em;
-        color: #636772;
+      p {
+        font-family: Arial, sans-serif;
+        font-size: 0.8em;
+        color: #666;
+        strong {
+          letter-spacing: -0.1em;
+          font-weight: 700;
+          font-size: 2em;
+          color: #636772;
+        }
       }
     }
     .diggIt {
