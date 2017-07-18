@@ -93,7 +93,7 @@ body {
           vertical-align: super;
           font-size: smaller; }
     .container .content1 .extra1 {
-      height: 50px;
+      height: 20px;
       grid-area: extra1;
       align-self: center;
       justify-self: center; }
@@ -105,9 +105,9 @@ body {
         border-radius: 5px;
         font-weight: 700; }
     .container .content1 .timer {
-      height: 8px; }
+      margin: 0;
+      height: 5px; }
       .container .content1 .timer progress[value] {
-        margin-top: 10px;
         appearance: none;
         border: none;
         width: 100%;
@@ -188,7 +188,7 @@ body {
           vertical-align: super;
           font-size: smaller; }
     .container .content2 .extra2 {
-      height: 50px;
+      height: 20px;
       grid-area: extra2;
       align-self: center;
       justify-self: center; }
@@ -200,9 +200,9 @@ body {
         border-radius: 5px;
         font-weight: 700; }
     .container .content2 .timer {
-      height: 8px; }
+      margin: 0;
+      height: 5px; }
       .container .content2 .timer progress[value] {
-        margin-top: 10px;
         appearance: none;
         border: none;
         width: 100%;
@@ -283,7 +283,7 @@ body {
           vertical-align: super;
           font-size: smaller; }
     .container .content3 .extra3 {
-      height: 50px;
+      height: 20px;
       grid-area: extra3;
       align-self: center;
       justify-self: center; }
@@ -295,9 +295,9 @@ body {
         border-radius: 5px;
         font-weight: 700; }
     .container .content3 .timer {
-      height: 8px; }
+      margin: 0;
+      height: 5px; }
       .container .content3 .timer progress[value] {
-        margin-top: 10px;
         appearance: none;
         border: none;
         width: 100%;
@@ -378,7 +378,7 @@ body {
           vertical-align: super;
           font-size: smaller; }
     .container .content4 .extra4 {
-      height: 50px;
+      height: 20px;
       grid-area: extra4;
       align-self: center;
       justify-self: center; }
@@ -390,9 +390,9 @@ body {
         border-radius: 5px;
         font-weight: 700; }
     .container .content4 .timer {
-      height: 8px; }
+      margin: 0;
+      height: 5px; }
       .container .content4 .timer progress[value] {
-        margin-top: 10px;
         appearance: none;
         border: none;
         width: 100%;
