@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400");
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #202020; }
+
+.container {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  color: #696969;
+  width: 335px;
+  margin: 100px auto;
+  display: grid; }
+  .container .table {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    background-color: #458cf1;
+    box-shadow: 0px 1px 2px #888888;
+    border-radius: 2px;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-areas: "caption" "head1" "head2" "row1" "row2" "row3" "row4" "row5" "row6" "line" "foot"; }
+    .container .table h1 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.9em;
+      font-weight: 400;
+      padding: 10px 0; }
+    .container .table h3 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 3em;
+      padding: 5px 0; }
+    .container .table .caption {
+      grid-area: caption; }
+      .container .table .caption h2 {
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        font-size: 0.8em;
+        color: #e9e9e9;
+        border-bottom: 0.5px solid #d9d9d9; }
+    .container .table .head1 {
+      display: grid;
+      font-weight: 300;
+      grid-area: head1; }
+      .container .table .head1 .cell1 {
+        grid-area: cell1;
+        background-color: #fff; }
+      .container .table .head1 .cell2 {
+        grid-area: cell2;
+        background-color: #fff; }
+      .container .table .head1 .cell3 {
+        grid-area: cell3;
+        background-color: #fff; }
+      .container .table .head1 .cell4 {
+        grid-area: cell4;
+        background-color: #fff; }
+      .container .table .head1 .cell5 {
+        grid-area: cell5;
+        background-color: #fff; }
+      .container .table .head1 .cell6 {
+        grid-area: cell6;
+        background-color: #fff; }
+      .container .table .head1 .cell7 {
+        grid-area: cell7;
+        background-color: #fff; }
+      .container .table .head1 .cell8 {
+        grid-area: cell8;
+        background-color: #fff; }
+      .container .table .head1 .cell9 {
+        grid-area: cell9;
+        background-color: #fff; }
+      .container .table .head1 .cell10 {
+        grid-area: cell10;
+        background-color: #fff; }
+      .container .table .head1 .cell11 {
+        grid-area: cell11;
+        background-color: #fff; }
+      .container .table .head1 .cell12 {
+        grid-area: cell12;
+        background-color: #fff; }
+      .container .table .head1 .cell13 {
+        grid-area: cell13;
+        background-color: #fff; }
+      .container .table .head1 .cell14 {
+        grid-area: cell14;
+        background-color: #fff; }
+      .container .table .head1 .cell15 {
+        grid-area: cell15;
+        background-color: #fff; }
+      .container .table .head1 .cell16 {
+        grid-area: cell16;
+        background-color: #fff; }
+      .container .table .head1 .cell17 {
+        grid-area: cell17;
+        background-color: #fff; }
+      .container .table .head1 .cell18 {
+        grid-area: cell18;
+        background-color: #fff; }
+      .container .table .head1 .cell19 {
+        grid-area: cell19;
+        background-color: #fff; }
+      .container .table .head1 .cell20 {
+        grid-area: cell20;
+        background-color: #fff; }
+      .container .table .head1 .cell21 {
+        grid-area: cell21;
+        background-color: #fff; }
+      .container .table .head1 .cell22 {
+        grid-area: cell22;
+        background-color: #fff; }
+      .container .table .head1 .cell23 {
+        grid-area: cell23;
+        background-color: #fff; }
+      .container .table .head1 .cell24 {
+        grid-area: cell24;
+        background-color: #fff; }
+      .container .table .head1 .cell25 {
+        grid-area: cell25;
+        background-color: #fff; }
+      .container .table .head1 .cell26 {
+        grid-area: cell26;
+        background-color: #fff; }
+      .container .table .head1 .cell27 {
+        grid-area: cell27;
+        background-color: #fff; }
+      .container .table .head1 .cell28 {
+        grid-area: cell28;
+        background-color: #fff; }
+      .container .table .head1 .cell29 {
+        grid-area: cell29;
+        background-color: #fff; }
+      .container .table .head1 .cell30 {
+        grid-area: cell30;
+        background-color: #fff; }
+    .container .table .head2 {
+      display: grid;
+      grid-area: head2;
+      border-bottom: 0.5px solid #d9d9d9;
+      font-weight: 300;
+      grid-template-areas: "cell1 cell2";
+      padding-top: 30px;
+      padding-bottom: 5px; }
+      .container .table .head2 .cell1 {
+        grid-area: cell1;
+        font-size: 0.8em;
+        color: #e9e9e9; }
+      .container .table .head2 .cell2 {
+        grid-area: cell2;
+        justify-self: right;
+        font-size: 0.8em;
+        color: #e9e9e9; }
+    .container .table .row1 {
+      display: grid;
+      grid-area: row1;
+      border-bottom: 0.5px solid #d9d9d9;
+      grid-template-areas: "cell1 cell1 cell2 "; }
+      .container .table .row1 .cell1 {
+        grid-area: cell1;
+        font-weight: 300;
+        font-size: 0.9em;
+        justify-self: left;
+        padding: 10px 0; }
+      .container .table .row1 .cell2 {
+        grid-area: cell2;
+        font-weight: 300;
+        font-size: 0.9em;
+        justify-self: right;
+        padding: 10px 0; }
+    .container .table .row2 {
+      display: grid;
+      grid-area: row2;
+      border-bottom: 0.5px solid #d9d9d9;
+      grid-template-areas: "cell1 cell1 cell2 "; }
+      .container .table .row2 .cell1 {
+        grid-area: cell1;
+        font-weight: 300;
+        font-size: 0.9em;
+        justify-self: left;
+        padding: 10px 0; }
+      .container .table .row2 .cell2 {
+        grid-area: cell2;
+        font-weight: 300;
+        font-size: 0.9em;
+        justify-self: right;
+        padding: 10px 0; }
+    .container .table .row3 {
+      display: grid;
+      grid-area: row3;
+      border-bottom: 0.5px solid #d9d9d9;
+      grid-template-areas: "cell1 cell1 cell2 "; }
+      .container .table .row3 .cell1 {
+        grid-area: cell1;
+        font-weight: 300;
+        font-size: 0.9em;
+        justify-self: left;
+        padding: 10px 0; }
+      .container .table .row3 .cell2 {
+        grid-area: cell2;
+        font-weight: 300;
+        font-size: 0.9em;
+        justify-self: right;
+        padding: 10px 0; }
+    .container .table .row4 {
+      display: grid;
+      grid-area: row4;
+      border-bottom: 0.5px solid #d9d9d9;
+      grid-template-areas: "cell1 cell1 cell2 "; }
+      .container .table .row4 .cell1 {
+        grid-area: cell1;
+        font-weight: 300;
+        font-size: 0.9em;
+        justify-self: left;
+        padding: 10px 0; }
+      .container .table .row4 .cell2 {
+        grid-area: cell2;
+        font-weight: 300;
+        font-size: 0.9em;
+        justify-self: right;
+        padding: 10px 0; }
+    .container .table .row5 {
+      display: grid;
+      grid-area: row5;
+      border-bottom: 0.5px solid #d9d9d9;
+      grid-template-areas: "cell1 cell1 cell2 "; }
+      .container .table .row5 .cell1 {
+        grid-area: cell1;
+        font-weight: 300;
+        font-size: 0.9em;
+        justify-self: left;
+        padding: 10px 0; }
+      .container .table .row5 .cell2 {
+        grid-area: cell2;
+        font-weight: 300;
+        font-size: 0.9em;
+        justify-self: right;
+        padding: 10px 0; }
+    .container .table .line hr {
+      height: 0.5px;
+      width: 109%;
+      margin-left: -20px;
+      margin-top: 20px;
+      color: #d9d9d9;
+      opacity: 0.2; }
+    .container .table .foot {
+      grid-area: foot;
+      padding-top: 5px;
+      display: grid;
+      grid-template-areas: "cell1 cell2 cell2 cell2 cell2";
+      font-size: 0.8em; }
+      .container .table .foot .cell1 {
+        grid-area: cell1; }
+      .container .table .foot .cell2 {
+        grid-area: cell2;
+        justify-self: right;
+        font-size: 1.1em; }
+
+/*# sourceMappingURL=main.css.map */
