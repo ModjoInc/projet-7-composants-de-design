@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400");
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #1f1f1f; }
+
+.container {
+  background-color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+  color: #696969;
+  width: 505px;
+  margin: 100px auto;
+  display: grid; }
+  .container h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    padding: 20px 5px; }
+  .container .table {
+    background-color: #fff;
+    box-shadow: 0px 1px 2px #888888;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-areas: "caption" "head1" "head2" "row1" "row2" "row3" "row4" "row5" "row6" "line" "foot"; }
+    .container .table .caption {
+      grid-area: caption; }
+      .container .table .caption h2 {
+        padding: 20px 0;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 0.9em; }
+    .container .table .head1 {
+      display: grid;
+      font-weight: 300;
+      grid-area: head1;
+      border-top: 0.5px solid #d9d9d9;
+      grid-template-areas: "cell1 cell2 cell3 cell4 cell5 cell6 cell7"; }
+      .container .table .head1 .cell1 {
+        grid-area: cell1;
+        padding: 10px 0;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center; }
+      .container .table .head1 .cell1 {
+        text-align: left;
+        width: 110px; }
+      .container .table .head1 .cell2 {
+        grid-area: cell2;
+        padding: 10px 0;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center; }
+      .container .table .head1 .cell1 {
+        text-align: left;
+        width: 110px; }
+      .container .table .head1 .cell3 {
+        grid-area: cell3;
+        padding: 10px 0;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center; }
+      .container .table .head1 .cell1 {
+        text-align: left;
+        width: 110px; }
+      .container .table .head1 .cell4 {
+        grid-area: cell4;
+        padding: 10px 0;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center; }
+      .container .table .head1 .cell1 {
+        text-align: left;
+        width: 110px; }
+      .container .table .head1 .cell5 {
+        grid-area: cell5;
+        padding: 10px 0;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center; }
+      .container .table .head1 .cell1 {
+        text-align: left;
+        width: 110px; }
+      .container .table .head1 .cell6 {
+        grid-area: cell6;
+        padding: 10px 0;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center; }
+      .container .table .head1 .cell1 {
+        text-align: left;
+        width: 110px; }
+      .container .table .head1 .cell7 {
+        grid-area: cell7;
+        padding: 10px 0;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center; }
+      .container .table .head1 .cell1 {
+        text-align: left;
+        width: 110px; }
+    .container .table .head2 {
+      color: #000;
+      border-bottom: 0.5px solid #d9d9d9;
+      font-weight: 400; }
+    .container .table .head2 {
+      display: grid;
+      font-weight: 300;
+      grid-area: head2;
+      border-top: 0.5px solid #d9d9d9;
+      grid-template-areas: "cell1 cell2 cell3 cell4 cell5 cell6 cell7"; }
+      .container .table .head2 .cell1 {
+        grid-area: cell1;
+        padding: 10px 0;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center; }
+      .container .table .head2 .cell1 {
+        text-align: left;
+        width: 110px; }
+      .container .table .head2 .cell2 {
+        grid-area: cell2;
+        padding: 10px 0;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center; }
+      .container .table .head2 .cell1 {
+        text-align: left;
+        width: 110px; }
+      .container .table .head2 .cell3 {
+        grid-area: cell3;
+        padding: 10px 0;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center; }
+      .container .table .head2 .cell1 {
+        text-align: left;
+        width: 110px; }
+      .container .table .head2 .cell4 {
+        grid-area: cell4;
+        padding: 10px 0;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center; }
+      .container .table .head2 .cell1 {
+        text-align: left;
+        width: 110px; }
+      .container .table .head2 .cell5 {
+        grid-area: cell5;
+        padding: 10px 0;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center; }
+      .container .table .head2 .cell1 {
+        text-align: left;
+        width: 110px; }
+      .container .table .head2 .cell6 {
+        grid-area: cell6;
+        padding: 10px 0;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center; }
+      .container .table .head2 .cell1 {
+        text-align: left;
+        width: 110px; }
+      .container .table .head2 .cell7 {
+        grid-area: cell7;
+        padding: 10px 0;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center; }
+      .container .table .head2 .cell1 {
+        text-align: left;
+        width: 110px; }
+    .container .table .head2 {
+      color: #000;
+      border-bottom: 0.5px solid #d9d9d9;
+      font-weight: 400; }
+    .container .table .row1 {
+      display: grid;
+      grid-area: row1;
+      border-bottom: 0.5px solid #d9d9d9;
+      grid-template-areas: "cell0 cell1 cell2 cell3 cell4 cell5 cell6"; }
+      .container .table .row1 .cell0 {
+        grid-area: cell0;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row1 .cell1 {
+        grid-area: cell1;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row1 .cell2 {
+        grid-area: cell2;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row1 .cell3 {
+        grid-area: cell3;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row1 .cell4 {
+        grid-area: cell4;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row1 .cell5 {
+        grid-area: cell5;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row1 .cell6 {
+        grid-area: cell6;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row1 .cell0 {
+        width: 110px;
+        text-align: left; }
+      .container .table .row1 .cell1 {
+        background-color: #3171d3; }
+    .container .table .row2 {
+      display: grid;
+      grid-area: row2;
+      border-bottom: 0.5px solid #d9d9d9;
+      grid-template-areas: "cell0 cell1 cell2 cell3 cell4 cell5 cell6"; }
+      .container .table .row2 .cell0 {
+        grid-area: cell0;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row2 .cell1 {
+        grid-area: cell1;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row2 .cell2 {
+        grid-area: cell2;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row2 .cell3 {
+        grid-area: cell3;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row2 .cell4 {
+        grid-area: cell4;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row2 .cell5 {
+        grid-area: cell5;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row2 .cell6 {
+        grid-area: cell6;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row2 .cell0 {
+        width: 110px;
+        text-align: left; }
+      .container .table .row2 .cell1 {
+        background-color: #3171d3; }
+    .container .table .row3 {
+      display: grid;
+      grid-area: row3;
+      border-bottom: 0.5px solid #d9d9d9;
+      grid-template-areas: "cell0 cell1 cell2 cell3 cell4 cell5 cell6"; }
+      .container .table .row3 .cell0 {
+        grid-area: cell0;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row3 .cell1 {
+        grid-area: cell1;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row3 .cell2 {
+        grid-area: cell2;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row3 .cell3 {
+        grid-area: cell3;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row3 .cell4 {
+        grid-area: cell4;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row3 .cell5 {
+        grid-area: cell5;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row3 .cell6 {
+        grid-area: cell6;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row3 .cell0 {
+        width: 110px;
+        text-align: left; }
+      .container .table .row3 .cell1 {
+        background-color: #3171d3; }
+    .container .table .row4 {
+      display: grid;
+      grid-area: row4;
+      border-bottom: 0.5px solid #d9d9d9;
+      grid-template-areas: "cell0 cell1 cell2 cell3 cell4 cell5 cell6"; }
+      .container .table .row4 .cell0 {
+        grid-area: cell0;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row4 .cell1 {
+        grid-area: cell1;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row4 .cell2 {
+        grid-area: cell2;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row4 .cell3 {
+        grid-area: cell3;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row4 .cell4 {
+        grid-area: cell4;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row4 .cell5 {
+        grid-area: cell5;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row4 .cell6 {
+        grid-area: cell6;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row4 .cell0 {
+        width: 110px;
+        text-align: left; }
+      .container .table .row4 .cell1 {
+        background-color: #3171d3; }
+    .container .table .row5 {
+      display: grid;
+      grid-area: row5;
+      border-bottom: 0.5px solid #d9d9d9;
+      grid-template-areas: "cell0 cell1 cell2 cell3 cell4 cell5 cell6"; }
+      .container .table .row5 .cell0 {
+        grid-area: cell0;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row5 .cell1 {
+        grid-area: cell1;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row5 .cell2 {
+        grid-area: cell2;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row5 .cell3 {
+        grid-area: cell3;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row5 .cell4 {
+        grid-area: cell4;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row5 .cell5 {
+        grid-area: cell5;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row5 .cell6 {
+        grid-area: cell6;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row5 .cell0 {
+        width: 110px;
+        text-align: left; }
+      .container .table .row5 .cell1 {
+        background-color: #3171d3; }
+    .container .table .row6 {
+      display: grid;
+      grid-area: row6;
+      border-bottom: 0.5px solid #d9d9d9;
+      grid-template-areas: "cell0 cell1 cell2 cell3 cell4 cell5 cell6"; }
+      .container .table .row6 .cell0 {
+        grid-area: cell0;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row6 .cell1 {
+        grid-area: cell1;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row6 .cell2 {
+        grid-area: cell2;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row6 .cell3 {
+        grid-area: cell3;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row6 .cell4 {
+        grid-area: cell4;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row6 .cell5 {
+        grid-area: cell5;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row6 .cell6 {
+        grid-area: cell6;
+        color: #000;
+        padding: 10px 0;
+        margin: 1px 0;
+        width: 55px;
+        font-size: 0.8em; }
+      .container .table .row6 .cell0 {
+        width: 110px;
+        text-align: left; }
+      .container .table .row6 .cell1 {
+        background-color: #3171d3; }
+    .container .table .row1 .cell2,
+    .container .table .row1 .cell3,
+    .container .table .row2 .cell2,
+    .container .table .row5 .cell2 {
+      background-color: #458cf1; }
+    .container .table .row1 .cell4,
+    .container .table .row1 .cell5,
+    .container .table .row1 .cell6,
+    .container .table .row2 .cell5,
+    .container .table .row4 .cell2,
+    .container .table .row4 .cell3 {
+      background-color: #74a8f4; }
+    .container .table .row2 .cell3,
+    .container .table .row2 .cell4,
+    .container .table .row3 .cell2,
+    .container .table .row3 .cell4 {
+      background-color: #a3c4f7; }
+    .container .table .row3 .cell3 {
+      background-color: #d1e1fb; }
+    .container .table .line hr {
+      height: 0.5px;
+      width: 109%;
+      margin-left: -20px;
+      margin-top: 20px;
+      color: #d9d9d9;
+      opacity: 0.2; }
+    .container .table .foot {
+      grid-area: foot;
+      padding-top: 5px;
+      display: grid;
+      grid-template-areas: "cell1 cell2 cell2 cell2 cell2";
+      font-size: 0.8em; }
+      .container .table .foot .cell1 {
+        grid-area: cell1; }
+      .container .table .foot .cell2 {
+        grid-area: cell2;
+        justify-self: right;
+        color: #3171d3;
+        font-size: 1.1em; }
+
+/*# sourceMappingURL=main.css.map */

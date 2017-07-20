@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400');
+$font1:    'Open Sans', sans-serif;
+$font2:    'Roboto', sans-serif;
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f1f1f;
+}
+
+.container {
+  h1{
+    font-family: $font1;
+    font-weight: 300;
+    font-size: 1.2em;
+    padding: 20px 5px;
+  }
+  background-color: #f2f2f2;
+  font-family: $font2;
+  color: #696969;
+  width: 505px;
+  margin: 100px auto;
+  display: grid;
+  .table {
+    background-color: #fff;
+    box-shadow: 0px 1px 2px #888888;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-areas:
+    "caption" "head1" "head2" "row1" "row2" "row3" "row4" "row5" "row6" "line" "foot" ;
+    .caption {
+      grid-area: caption;
+      h2 {
+        padding: 20px 0;
+        font-family: $font1;
+        font-weight: 400;
+        font-size: 0.9em;
+      }
+    }
+    @for $j from 1 to 3 {
+      .head#{$j} {
+        display: grid;
+        font-weight: 300;
+        grid-area: head#{$j};
+        border-top: 0.5px solid #d9d9d9;
+        grid-template-areas:
+        "cell1 cell2 cell3 cell4 cell5 cell6 cell7";
+        @for $k from 1 to 8 {
+          .cell#{$k} {
+            grid-area: cell#{$k};
+            padding: 10px 0;
+            font-size: 0.8em;
+            width: 50px;
+            text-align: center;
+          }
+          .cell1 {
+            text-align: left;
+            width: 110px;
+          }
+        }
+      }
+      .head2 {
+        color: #000;
+        border-bottom: 0.5px solid #d9d9d9;
+        font-weight: 400;
+      }
+    }
+    @for $i from 1 to 7 {
+      .row#{$i} {
+        display: grid;
+        grid-area: row#{$i};
+        border-bottom: 0.5px solid #d9d9d9;
+        grid-template-areas:
+        "cell0 cell1 cell2 cell3 cell4 cell5 cell6";
+        @for $k from 0 to 7 {
+          .cell#{$k} {
+            grid-area: cell#{$k};
+            color: #000;
+            padding: 10px 0;
+            margin: 1px 0;
+            width: 55px;
+            font-size: 0.8em;
+          }
+        }
+        .cell0 {
+          width: 110px;
+          text-align: left;
+        }
+        .cell1 {
+          background-color: #3171d3;
+        }
+      }
+    }
+    .row1 .cell2,
+    .row1 .cell3,
+    .row2 .cell2,
+    .row5 .cell2 {
+      background-color: #458cf1;
+    }
+
+    .row1 .cell4,
+    .row1 .cell5,
+    .row1 .cell6,
+    .row2 .cell5,
+    .row4 .cell2,
+    .row4 .cell3 {
+      background-color: #74a8f4;
+    }
+    .row2 .cell3,
+    .row2 .cell4,
+    .row3 .cell2,
+    .row3 .cell4 {
+      background-color: #a3c4f7;
+    }
+    .row3 .cell3 {
+      background-color: #d1e1fb;
+    }
+    .line {
+      hr {
+        height: 0.5px;
+        width: 109%;
+        margin-left: -20px;
+        margin-top: 20px;
+        color: #d9d9d9;
+        opacity: 0.2;
+      }
+    }
+    .foot {
+      grid-area: foot;
+      padding-top: 5px;
+      display: grid;
+      grid-template-areas: "cell1 cell2 cell2 cell2 cell2";
+      font-size: 0.8em;
+      .cell1 {
+        grid-area: cell1;
+      }
+      .cell2 {
+        grid-area: cell2;
+        justify-self: right;
+        color: #3171d3;
+        font-size: 1.1em;
+      }
+    }
+  }
+}
