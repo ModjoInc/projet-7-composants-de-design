@@ -16,12 +16,12 @@ body {
   background-color: #fff;
   font-family: $font2;
   color: #696969;
-  width: 335px;
+  width: 350px;
   margin: 100px auto;
   display: grid;
   .table {
     h1{
-      font-family: $font1;
+      font-family: $font2;
       font-size: 0.9em;
       font-weight: 400;
       padding: 10px 0;
@@ -41,7 +41,7 @@ body {
     padding: 10px 20px;
     display: grid;
     grid-template-areas:
-    "caption" "head1" "head2" "row1" "row2" "row3" "row4" "row5" "row6" "line" "foot" ;
+    "caption" "head1" "head2" "row1" "row2" "row3" "row4" "row5" "line" "foot" ;
     .caption {
       grid-area: caption;
       h2 {
@@ -58,11 +58,139 @@ body {
       display: grid;
       font-weight: 300;
       grid-area: head1;
+      grid-template-columns: repeat(30, 10px);
+      grid-template-areas:
+      "cell1 cell2 cell3 cell4 cell5 cell6 cell7 cell8 cell9 cell10
+      cell11 cell12 cell13 cell14 cell15 cell16 cell17 cell18 cell19 cell20
+      cell21 cell22 cell23 cell24 cell25 cell26 cell27 cell28 cell29 cell30";
       @for $k from 1 through 30 {
         .cell#{$k} {
+          display: grid;
           grid-area: cell#{$k};
-          background-color: #fff;
+          background-color: #dae6fc;
+          margin-right: 1px;
+          height: 100px;
         }
+      }
+      .cell1 {
+        height: 32px;
+        margin-top: 68px;
+      }
+      .cell3 {
+        height: 24px;
+        margin-top: 76px;
+      }
+      .cell2 {
+        height: 28px;
+        margin-top: 72px;
+      }
+      .cell4 {
+        height: 48px;
+        margin-top: 52px;
+      }
+      .cell5 {
+        height: 30px;
+        margin-top: 70px;
+      }
+      .cell6 {
+        height: 70px;
+        margin-top: 30px;
+      }
+      .cell7 {
+        height: 43px;
+        margin-top: 57px;
+      }
+      .cell8 {
+        height: 43px;
+        margin-top: 57px;
+      }
+      .cell9 {
+        height: 67px;
+        margin-top: 33px;
+      }
+      .cell10 {
+        height: 52px;
+        margin-top: 48px;
+      }
+      .cell11 {
+        height: 61px;
+        margin-top: 39px;
+      }
+      .cell12 {
+        height: 43px;
+        margin-top: 57px;
+      }
+      .cell13 {
+        height: 73px;
+        margin-top: 27px;
+      }
+      .cell14 {
+        height: 56px;
+        margin-top: 44px;
+      }
+      .cell15 {
+        height: 54px;
+        margin-top: 46px;
+      }
+      .cell16 {
+        height: 33px;
+        margin-top: 67px;
+      }
+      .cell17 {
+        height: 47px;
+        margin-top: 53px;
+      }
+      .cell18 {
+        height: 35px;
+        margin-top: 65px;
+      }
+      .cell19  {
+        height: 28px;
+        margin-top: 72px;
+      }
+      .cell20 {
+        height: 58px;
+        margin-top: 42px;
+      }
+      .cell21 {
+        height: 42px;
+        margin-top: 58px;
+      }
+      .cell22 {
+        height: 52px;
+        margin-top: 48px;
+      }
+      .cell23 {
+        height: 39px;
+        margin-top: 61px;
+      }
+      .cell24 {
+        height: 46px;
+        margin-top: 54px;
+      }
+      .cell25 {
+        height: 41px;
+        margin-top: 59px;
+      }
+      .cell26 {
+        height: 28px;
+        margin-top: 72px;
+      }
+      .cell27 {
+        height: 33px;
+        margin-top: 67px;
+      }
+      .cell28 {
+        height: 46px;
+        margin-top: 54px;
+      }
+      .cell29 {
+        height: 43px;
+        margin-top: 57px;
+      }
+      .cell30 {
+        height: 18px;
+        margin-top: 82px;
       }
     }
     .head2 {
