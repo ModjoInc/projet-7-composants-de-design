@@ -17,13 +17,14 @@ body {
   .container .header {
     grid-area: head;
     display: grid;
-    padding: 35px;
+    padding: 20px 30px;
     grid-template-areas: "logo . nav"; }
     .container .header .logo {
       grid-area: logo;
       align-self: center; }
       .container .header .logo img {
-        width: 50px; }
+        width: 85px;
+        padding-left: 15px; }
     .container .header .menu {
       grid-area: nav;
       align-self: center;
@@ -40,19 +41,21 @@ body {
     background-color: #7fbb49;
     padding: 90px;
     color: #fff;
-    height: 345px;
+    height: 350px;
     text-align: center; }
     .container .banner h1 {
       font-family: "Open Sans", sans-serif;
-      font-size: 3em;
+      letter-spacing: 0.001em;
+      font-size: 3.2em;
       font-weight: 700;
-      padding-bottom: 20px; }
+      padding-bottom: 40px; }
     .container .banner p {
-      font-family: "Roboto", sans-serif;
+      font-family: "Open Sans", sans-serif;
+      word-spacing: 0.2em;
       font-size: 1.1em;
       font-weight: 300;
       line-height: 2em;
-      padding: 0 200px; }
+      padding: 0 150px; }
   .container .team {
     grid-area: team;
     display: grid;
@@ -63,13 +66,13 @@ body {
       font-size: 2em;
       font-weight: 700;
       padding: 80px 0; }
-    .container .team h2 {
-      font-weight: 700;
-      padding: 5px; }
-    .container .team h3 {
-      color: #b8b8b8;
-      padding-top: 5px;
-      padding-bottom: 20px; }
+      .container .team .title h2 {
+        font-weight: 700;
+        padding: 5px; }
+      .container .team .title h3 {
+        color: #b8b8b8;
+        padding-top: 5px;
+        padding-bottom: 20px; }
     .container .team .row1 {
       display: grid;
       grid-area: row1;
@@ -79,22 +82,74 @@ body {
         grid-area: cell1;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row1 .cell1 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row1 .cell1 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row1 .cell1 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row1 .cell2 {
         grid-area: cell2;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row1 .cell2 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row1 .cell2 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row1 .cell2 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row1 .cell3 {
         grid-area: cell3;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row1 .cell3 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row1 .cell3 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row1 .cell3 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row1 .cell4 {
         grid-area: cell4;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row1 .cell4 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row1 .cell4 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row1 .cell4 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
     .container .team .row2 {
       display: grid;
       grid-area: row2;
@@ -104,22 +159,74 @@ body {
         grid-area: cell1;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row2 .cell1 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row2 .cell1 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row2 .cell1 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row2 .cell2 {
         grid-area: cell2;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row2 .cell2 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row2 .cell2 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row2 .cell2 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row2 .cell3 {
         grid-area: cell3;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row2 .cell3 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row2 .cell3 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row2 .cell3 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row2 .cell4 {
         grid-area: cell4;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row2 .cell4 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row2 .cell4 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row2 .cell4 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
     .container .team .row3 {
       display: grid;
       grid-area: row3;
@@ -129,22 +236,74 @@ body {
         grid-area: cell1;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row3 .cell1 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row3 .cell1 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row3 .cell1 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row3 .cell2 {
         grid-area: cell2;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row3 .cell2 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row3 .cell2 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row3 .cell2 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row3 .cell3 {
         grid-area: cell3;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row3 .cell3 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row3 .cell3 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row3 .cell3 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row3 .cell4 {
         grid-area: cell4;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row3 .cell4 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row3 .cell4 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row3 .cell4 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
     .container .team .row4 {
       display: grid;
       grid-area: row4;
@@ -154,22 +313,74 @@ body {
         grid-area: cell1;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row4 .cell1 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row4 .cell1 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row4 .cell1 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row4 .cell2 {
         grid-area: cell2;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row4 .cell2 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row4 .cell2 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row4 .cell2 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row4 .cell3 {
         grid-area: cell3;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row4 .cell3 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row4 .cell3 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row4 .cell3 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row4 .cell4 {
         grid-area: cell4;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row4 .cell4 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row4 .cell4 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row4 .cell4 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
     .container .team .row5 {
       display: grid;
       grid-area: row5;
@@ -179,22 +390,74 @@ body {
         grid-area: cell1;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row5 .cell1 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row5 .cell1 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row5 .cell1 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row5 .cell2 {
         grid-area: cell2;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row5 .cell2 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row5 .cell2 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row5 .cell2 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row5 .cell3 {
         grid-area: cell3;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row5 .cell3 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row5 .cell3 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row5 .cell3 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row5 .cell4 {
         grid-area: cell4;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row5 .cell4 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row5 .cell4 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row5 .cell4 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
     .container .team .row6 {
       display: grid;
       grid-area: row6;
@@ -204,22 +467,74 @@ body {
         grid-area: cell1;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row6 .cell1 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row6 .cell1 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row6 .cell1 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row6 .cell2 {
         grid-area: cell2;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row6 .cell2 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row6 .cell2 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row6 .cell2 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row6 .cell3 {
         grid-area: cell3;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row6 .cell3 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row6 .cell3 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row6 .cell3 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row6 .cell4 {
         grid-area: cell4;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row6 .cell4 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row6 .cell4 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row6 .cell4 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
     .container .team .row7 {
       display: grid;
       grid-area: row7;
@@ -229,22 +544,74 @@ body {
         grid-area: cell1;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row7 .cell1 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row7 .cell1 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row7 .cell1 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row7 .cell2 {
         grid-area: cell2;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row7 .cell2 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row7 .cell2 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row7 .cell2 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row7 .cell3 {
         grid-area: cell3;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row7 .cell3 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row7 .cell3 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row7 .cell3 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
       .container .team .row7 .cell4 {
         grid-area: cell4;
         padding: 10px;
         padding-bottom: 180px;
-        text-align: center; }
+        text-align: center;
+        display: grid;
+        grid-template-areas: "image" "texte"; }
+        .container .team .row7 .cell4 .image {
+          grid-area: image;
+          margin-bottom: 5px;
+          height: 220px; }
+        .container .team .row7 .cell4 .text {
+          height: 200px;
+          grid-area: texte;
+          align-self: start; }
+          .container .team .row7 .cell4 .text p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300; }
   .container footer {
     grid-area: footer;
     display: grid;
