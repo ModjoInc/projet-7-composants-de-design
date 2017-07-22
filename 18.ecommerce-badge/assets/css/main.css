@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400");
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #222;
+  font-family: "Open Sans", sans-serif; }
+  body .container {
+    display: grid;
+    width: 95%;
+    margin: 50px auto;
+    background-color: #f2f2f2;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "content1 content2 content3 content4"; }
+    body .container .content1 {
+      grid-area: content1;
+      display: grid;
+      height: 340px;
+      grid-template-areas: "photo" "description"; }
+      body .container .content1 .photo {
+        display: grid;
+        grid-area: photo;
+        height: 300px;
+        border: 1px solid #d9d9d9; }
+        body .container .content1 .photo img {
+          width: 80%;
+          align-self: center;
+          justify-self: center; }
+      body .container .content1 .deal {
+        position: relative;
+        z-index: 999;
+        left: 230px;
+        bottom: 300px; }
+        body .container .content1 .deal h3 {
+          width: 80px;
+          height: 80px;
+          font-family: "Roboto", sans-serif;
+          font-size: 2em;
+          font-weight: 700;
+          border-radius: 50%;
+          background-color: #fcd132;
+          padding-top: 22px;
+          text-align: center; }
+          body .container .content1 .deal h3 sup {
+            vertical-align: super;
+            font-size: smaller; }
+        body .container .content1 .deal .first {
+          background-color: #cf4443;
+          color: #fff; }
+      body .container .content1 .description {
+        grid-area: description;
+        background-color: #fff;
+        align-self: end;
+        padding: 20px;
+        border: 1px solid #d9d9d9; }
+        body .container .content1 .description h2 {
+          font-family: "Roboto", sans-serif;
+          font-size: 1.3em; }
+    body .container .content2 {
+      grid-area: content2;
+      display: grid;
+      height: 340px;
+      grid-template-areas: "photo" "description"; }
+      body .container .content2 .photo {
+        display: grid;
+        grid-area: photo;
+        height: 300px;
+        border: 1px solid #d9d9d9; }
+        body .container .content2 .photo img {
+          width: 80%;
+          align-self: center;
+          justify-self: center; }
+      body .container .content2 .deal {
+        position: relative;
+        z-index: 999;
+        left: 230px;
+        bottom: 300px; }
+        body .container .content2 .deal h3 {
+          width: 80px;
+          height: 80px;
+          font-family: "Roboto", sans-serif;
+          font-size: 2em;
+          font-weight: 700;
+          border-radius: 50%;
+          background-color: #fcd132;
+          padding-top: 22px;
+          text-align: center; }
+          body .container .content2 .deal h3 sup {
+            vertical-align: super;
+            font-size: smaller; }
+        body .container .content2 .deal .first {
+          background-color: #cf4443;
+          color: #fff; }
+      body .container .content2 .description {
+        grid-area: description;
+        background-color: #fff;
+        align-self: end;
+        padding: 20px;
+        border: 1px solid #d9d9d9; }
+        body .container .content2 .description h2 {
+          font-family: "Roboto", sans-serif;
+          font-size: 1.3em; }
+    body .container .content3 {
+      grid-area: content3;
+      display: grid;
+      height: 340px;
+      grid-template-areas: "photo" "description"; }
+      body .container .content3 .photo {
+        display: grid;
+        grid-area: photo;
+        height: 300px;
+        border: 1px solid #d9d9d9; }
+        body .container .content3 .photo img {
+          width: 80%;
+          align-self: center;
+          justify-self: center; }
+      body .container .content3 .deal {
+        position: relative;
+        z-index: 999;
+        left: 230px;
+        bottom: 300px; }
+        body .container .content3 .deal h3 {
+          width: 80px;
+          height: 80px;
+          font-family: "Roboto", sans-serif;
+          font-size: 2em;
+          font-weight: 700;
+          border-radius: 50%;
+          background-color: #fcd132;
+          padding-top: 22px;
+          text-align: center; }
+          body .container .content3 .deal h3 sup {
+            vertical-align: super;
+            font-size: smaller; }
+        body .container .content3 .deal .first {
+          background-color: #cf4443;
+          color: #fff; }
+      body .container .content3 .description {
+        grid-area: description;
+        background-color: #fff;
+        align-self: end;
+        padding: 20px;
+        border: 1px solid #d9d9d9; }
+        body .container .content3 .description h2 {
+          font-family: "Roboto", sans-serif;
+          font-size: 1.3em; }
+    body .container .content4 {
+      grid-area: content4;
+      display: grid;
+      height: 340px;
+      grid-template-areas: "photo" "description"; }
+      body .container .content4 .photo {
+        display: grid;
+        grid-area: photo;
+        height: 300px;
+        border: 1px solid #d9d9d9; }
+        body .container .content4 .photo img {
+          width: 80%;
+          align-self: center;
+          justify-self: center; }
+      body .container .content4 .deal {
+        position: relative;
+        z-index: 999;
+        left: 230px;
+        bottom: 300px; }
+        body .container .content4 .deal h3 {
+          width: 80px;
+          height: 80px;
+          font-family: "Roboto", sans-serif;
+          font-size: 2em;
+          font-weight: 700;
+          border-radius: 50%;
+          background-color: #fcd132;
+          padding-top: 22px;
+          text-align: center; }
+          body .container .content4 .deal h3 sup {
+            vertical-align: super;
+            font-size: smaller; }
+        body .container .content4 .deal .first {
+          background-color: #cf4443;
+          color: #fff; }
+      body .container .content4 .description {
+        grid-area: description;
+        background-color: #fff;
+        align-self: end;
+        padding: 20px;
+        border: 1px solid #d9d9d9; }
+        body .container .content4 .description h2 {
+          font-family: "Roboto", sans-serif;
+          font-size: 1.3em; }
+
+/*# sourceMappingURL=main.css.map */
