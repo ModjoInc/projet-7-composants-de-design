@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400')
+$font1:    'Open Sans', sans-serif
+$font2:    'Roboto', sans-serif
+
+*, *:after, *:before
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+
+body
+  background-color: #1f1f1f
+
+.container
+  width: 500px
+  margin: 200px auto
+  display: grid
+  background-color: #d0d0d0
+
+  .card
+    display: grid
+    background-color: #fff
+    box-shadow: 0px 1px 2px #888888
+    margin: 2px
+    grid-template-areas: "photo content"
+    .photo
+      grid-area: photo
+      width: 200px
+      height: 260px
+      overflow: hidden
+      img
+        width: 100%
+
+    .content
+      grid-area: content
+      display: grid
+      margin-left: 20px
+      grid-template-areas: "title" "sub" "pin"
+      .title
+        grid-area: title
+        align-self: center
+        h2
+          font-family: $font2
+          font-size: 1.2em
+          font-weight: 700
+          color: #333
+          padding-top: 10px
+          padding-right: 10px
+          text-transform: capitalize
+
+      .sub
+        grid-area: sub
+        h3
+          font-family: $font1
+          font-size: 0.9em
+          color: #909090
+          padding-right: 50px
+          margin-top: -20px
+          line-height: 1.2em
+
+      .pin
+        grid-area: pin
+        display: grid
+        grid-template-columns: 1fr 4fr 2fr
+        grid-template-areas: "portrait author mark"
+        .portrait
+          grid-area: portrait
+          align-self: center
+          img
+            border-radius: 50%
+            width: 100%
+
+        .author
+          grid-area: author
+          justify-self: left
+          align-self: center
+          font-family: $font2
+          font-size: 0.8em
+          font-weight: 300
+          padding-left: 10px
+          p:nth-child(1)
+            color: #333
+          p
+            color: #909090
+            padding-top: 3px
+
+        .mark
+          grid-area: mark
+          display: inline
+          align-self: center
+          justify-self: center
+          padding-right: 10px
+          color: #c0c0c0
+          i
+            font-size: 1.5em
+            display: inline

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400");
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #1f1f1f; }
+
+.container {
+  width: 500px;
+  margin: 200px auto;
+  display: grid;
+  background-color: #d0d0d0; }
+  .container .card {
+    display: grid;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px #888888;
+    margin: 2px;
+    grid-template-areas: "photo content"; }
+    .container .card .photo {
+      grid-area: photo;
+      width: 200px;
+      height: 260px;
+      overflow: hidden; }
+      .container .card .photo img {
+        width: 100%; }
+    .container .card .content {
+      grid-area: content;
+      display: grid;
+      margin-left: 20px;
+      grid-template-areas: "title" "sub" "pin"; }
+      .container .card .content .title {
+        grid-area: title;
+        align-self: center; }
+        .container .card .content .title h2 {
+          font-family: "Roboto", sans-serif;
+          font-size: 1.2em;
+          font-weight: 700;
+          color: #333;
+          padding-top: 10px;
+          padding-right: 10px;
+          text-transform: capitalize; }
+      .container .card .content .sub {
+        grid-area: sub; }
+        .container .card .content .sub h3 {
+          font-family: "Open Sans", sans-serif;
+          font-size: 0.9em;
+          color: #909090;
+          padding-right: 50px;
+          margin-top: -20px;
+          line-height: 1.2em; }
+      .container .card .content .pin {
+        grid-area: pin;
+        display: grid;
+        grid-template-columns: 1fr 4fr 2fr;
+        grid-template-areas: "portrait author mark"; }
+        .container .card .content .pin .portrait {
+          grid-area: portrait;
+          align-self: center; }
+          .container .card .content .pin .portrait img {
+            border-radius: 50%;
+            width: 100%; }
+        .container .card .content .pin .author {
+          grid-area: author;
+          justify-self: left;
+          align-self: center;
+          font-family: "Roboto", sans-serif;
+          font-size: 0.8em;
+          font-weight: 300;
+          padding-left: 10px; }
+          .container .card .content .pin .author p:nth-child(1) {
+            color: #333; }
+          .container .card .content .pin .author p {
+            color: #909090;
+            padding-top: 3px; }
+        .container .card .content .pin .mark {
+          grid-area: mark;
+          display: inline;
+          align-self: center;
+          justify-self: center;
+          padding-right: 10px;
+          color: #c0c0c0; }
+          .container .card .content .pin .mark i {
+            font-size: 1.5em;
+            display: inline; }
+
+/*# sourceMappingURL=main.css.map */
