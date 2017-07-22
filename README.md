@@ -1,21 +1,9 @@
 # projet-7-composants-de-design
 
-Dans ce repo se trouvent 22 composants interfaces.
-
-Intègre-les en html+css en suivant l'ordre numérique (de 1 à ...).
-
-Pour chaque composant, crée un dossier du même nom que l'image, contenant cette structure:
-
-- nom-du-composant/
-
-    L index.html
+- Projets 00 à 13 : **SCSS** 
     
-    L assets
+    - ATTENTION! dossier contenant scss a le nom "sass" mais il est bien rédigé en s**C**ss
     
-        L css
-        
-        L sass
-        
-        L img
+- Projets 14 à ?  : **SASS**
         
         
