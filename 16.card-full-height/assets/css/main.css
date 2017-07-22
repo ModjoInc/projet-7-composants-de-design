@@ -8,20 +8,20 @@ body {
   background-color: #1f1f1f; }
 
 .container {
-  width: 350px;
+  width: 500px;
   margin: 200px auto;
   display: grid;
-  background-color: #fbfcfd; }
+  background-color: #d0d0d0; }
   .container .card {
     display: grid;
     background-color: #fff;
-    border: 1px solid #d6d6d6;
-    margin: 15px;
-    grid-template-areas: "photo" "content"; }
+    box-shadow: 0px 1px 2px #888888;
+    margin: 2px;
+    grid-template-areas: "photo content"; }
     .container .card .photo {
       grid-area: photo;
-      width: 320px;
-      height: 280px;
+      width: 200px;
+      height: 260px;
       overflow: hidden; }
       .container .card .photo img {
         width: 100%; }
@@ -29,24 +29,10 @@ body {
       grid-area: content;
       display: grid;
       margin-left: 20px;
-      grid-template-areas: "audio" "title" "sub" "pin"; }
-      .container .card .content .audio {
-        grid-area: audio;
-        display: grid;
-        padding-top: 10px;
-        grid-template-columns: 5fr 1fr;
-        grid-template-areas: "hp lock"; }
-        .container .card .content .audio .hp {
-          color: #909090; }
-          .container .card .content .audio .hp p {
-            display: inline; }
-        .container .card .content .audio .lock {
-          color: #909090;
-          justify-self: right;
-          padding-right: 20px; }
+      grid-template-areas: "title" "sub" "pin"; }
       .container .card .content .title {
         grid-area: title;
-        margin-bottom: 10px; }
+        align-self: center; }
         .container .card .content .title h2 {
           font-family: "Roboto", sans-serif;
           font-size: 1.2em;
@@ -61,14 +47,13 @@ body {
           font-family: "Open Sans", sans-serif;
           font-size: 0.9em;
           color: #909090;
-          padding-right: 30px;
-          margin-bottom: 100px;
+          padding-right: 50px;
+          margin-top: -20px;
           line-height: 1.2em; }
       .container .card .content .pin {
         grid-area: pin;
         display: grid;
-        margin-bottom: 10px;
-        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-columns: 1fr 4fr 2fr;
         grid-template-areas: "portrait author mark"; }
         .container .card .content .pin .portrait {
           grid-area: portrait;
@@ -78,6 +63,7 @@ body {
             width: 100%; }
         .container .card .content .pin .author {
           grid-area: author;
+          justify-self: left;
           align-self: center;
           font-family: "Roboto", sans-serif;
           font-size: 0.8em;
@@ -88,10 +74,6 @@ body {
           .container .card .content .pin .author p {
             color: #909090;
             padding-top: 3px; }
-          .container .card .content .pin .author em {
-            font-size: 1.1em;
-            font-family: "Open Sans", sans-serif;
-            color: #909090; }
         .container .card .content .pin .mark {
           grid-area: mark;
           display: inline;
