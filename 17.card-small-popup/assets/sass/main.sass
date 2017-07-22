@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400')
+$font1:    'Open Sans', sans-serif
+$font2:    'Roboto', sans-serif
+
+*, *:after, *:before
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+
+body
+  background-color: #1f1f1f
+
+.container
+  width: 550px
+  margin: 200px auto
+  display: grid
+  background-color: #fbfcfd
+  // création et positionnement du popup
+  .popup
+    font-family: $font2
+    color: #909090
+    position: relative
+    bottom: 25px
+    left: 517px
+    z-index: 999
+    width: 250px
+    height: 45px
+    margin-left: -127px
+    padding: 13px
+    border: 1px solid #ccc
+    background-color: #fff
+    border-radius: 3px
+  .popup:after, .popup:before
+    bottom: 100%
+    left: 50%
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+  .popup:after
+    border-color: rgba(255, 255, 255, 0)
+    border-bottom-color: #fff
+    border-width: 10px
+    margin-left: -10px
+  .popup:before
+    border-color: rgba(204, 204, 204, 0)
+    border-bottom-color: #ccc
+    border-width: 11px
+    margin-left: -11px
+    // fin du popup
+  .card
+    display: grid
+    background-color: #fff
+    border: 1px solid #d6d6d6
+    margin: 15px
+    grid-template-areas: "photo content"
+    .photo
+      grid-area: photo
+      width: 210px
+      overflow: hidden
+      img
+        width: 99%
+
+    .content
+      grid-area: content
+      display: grid
+      margin-left: 20px
+      grid-template-areas: "like" "title" "sub" "pin"
+      .like
+        grid-area: like
+        display: grid
+        padding-top: 10px
+        .heart
+          color: #909090
+          font-family: $font2
+          font-size: 0.8em
+          p
+            display: inline
+
+      .title
+        grid-area: title
+        margin-bottom: 10px
+        h2
+          font-family: $font2
+          font-size: 1.2em
+          font-weight: 700
+          color: #333
+          padding-top: 10px
+          padding-right: 10px
+
+      .sub
+        grid-area: sub
+        h3
+          font-family: $font1
+          font-size: 0.9em
+          color: #909090
+          padding-right: 30px
+          margin-bottom: 100px
+          line-height: 1.2em
+
+      .pin
+        grid-area: pin
+        display: grid
+        margin-bottom: 10px
+        grid-template-columns: 1fr 4fr 1fr
+        grid-template-areas: "portrait author mark"
+        .portrait
+          grid-area: portrait
+          align-self: center
+          img
+            border-radius: 50%
+            width: 100%
+
+        .author
+          grid-area: author
+          align-self: center
+          font-family: $font2
+          font-size: 0.8em
+          font-weight: 300
+          padding-left: 10px
+          p:nth-child(1)
+            color: #333
+          p
+            color: #909090
+            padding-top: 3px
+          em
+            font-size: 1.1em
+            font-family: $font1
+            color: #909090
+
+        .mark
+          grid-area: mark
+          display: inline
+          align-self: center
+          justify-self: center
+          padding-right: 10px
+          color: #c0c0c0
+          i
+            font-size: 1.5em
+            display: inline

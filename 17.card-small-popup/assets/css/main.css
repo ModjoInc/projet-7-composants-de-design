@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400");
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #1f1f1f; }
+
+.container {
+  width: 550px;
+  margin: 200px auto;
+  display: grid;
+  background-color: #fbfcfd; }
+  .container .popup {
+    font-family: "Roboto", sans-serif;
+    color: #909090;
+    position: relative;
+    bottom: 25px;
+    left: 517px;
+    z-index: 999;
+    width: 250px;
+    height: 45px;
+    margin-left: -127px;
+    padding: 13px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 3px; }
+  .container .popup:after, .container .popup:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .container .popup:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px; }
+  .container .popup:before {
+    border-color: rgba(204, 204, 204, 0);
+    border-bottom-color: #ccc;
+    border-width: 11px;
+    margin-left: -11px; }
+  .container .card {
+    display: grid;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    margin: 15px;
+    grid-template-areas: "photo content"; }
+    .container .card .photo {
+      grid-area: photo;
+      width: 210px;
+      overflow: hidden; }
+      .container .card .photo img {
+        width: 99%; }
+    .container .card .content {
+      grid-area: content;
+      display: grid;
+      margin-left: 20px;
+      grid-template-areas: "like" "title" "sub" "pin"; }
+      .container .card .content .like {
+        grid-area: like;
+        display: grid;
+        padding-top: 10px; }
+        .container .card .content .like .heart {
+          color: #909090;
+          font-family: "Roboto", sans-serif;
+          font-size: 0.8em; }
+          .container .card .content .like .heart p {
+            display: inline; }
+      .container .card .content .title {
+        grid-area: title;
+        margin-bottom: 10px; }
+        .container .card .content .title h2 {
+          font-family: "Roboto", sans-serif;
+          font-size: 1.2em;
+          font-weight: 700;
+          color: #333;
+          padding-top: 10px;
+          padding-right: 10px; }
+      .container .card .content .sub {
+        grid-area: sub; }
+        .container .card .content .sub h3 {
+          font-family: "Open Sans", sans-serif;
+          font-size: 0.9em;
+          color: #909090;
+          padding-right: 30px;
+          margin-bottom: 100px;
+          line-height: 1.2em; }
+      .container .card .content .pin {
+        grid-area: pin;
+        display: grid;
+        margin-bottom: 10px;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: "portrait author mark"; }
+        .container .card .content .pin .portrait {
+          grid-area: portrait;
+          align-self: center; }
+          .container .card .content .pin .portrait img {
+            border-radius: 50%;
+            width: 100%; }
+        .container .card .content .pin .author {
+          grid-area: author;
+          align-self: center;
+          font-family: "Roboto", sans-serif;
+          font-size: 0.8em;
+          font-weight: 300;
+          padding-left: 10px; }
+          .container .card .content .pin .author p:nth-child(1) {
+            color: #333; }
+          .container .card .content .pin .author p {
+            color: #909090;
+            padding-top: 3px; }
+          .container .card .content .pin .author em {
+            font-size: 1.1em;
+            font-family: "Open Sans", sans-serif;
+            color: #909090; }
+        .container .card .content .pin .mark {
+          grid-area: mark;
+          display: inline;
+          align-self: center;
+          justify-self: center;
+          padding-right: 10px;
+          color: #c0c0c0; }
+          .container .card .content .pin .mark i {
+            font-size: 1.5em;
+            display: inline; }
+
+/*# sourceMappingURL=main.css.map */
