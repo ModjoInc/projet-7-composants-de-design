@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:300,400,700|Roboto:300,400");
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -6,156 +6,55 @@
 
 body {
   background-color: #222;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "PT Sans", sans-serif; }
   body .container {
-    background-color: #1d3145;
+    background-color: #fff;
     padding: 40px;
     display: grid;
-    grid-template-columns: repeat 6, 1fr;
-    grid-template-areas: ". content1 content2 content3 content4" ". . content5 . content6"; }
-    body .container .content1 {
-      grid-area: content1;
-      color: #fff;
-      font-family: "Open Sans", sans-serif;
-      margin-bottom: 50px; }
-      body .container .content1 h1 {
-        font-weight: 700;
-        padding: 20px 0; }
-      body .container .content1 li {
-        font-size: 0.8em;
-        color: #b0c5d8;
-        padding: 10px 0; }
-      body .container .content1 i {
-        margin-left: -13px;
-        padding-right: 5px; }
-      body .container .content1 input {
-        border: none;
-        padding: 10px 0;
-        border-bottom: 1px solid #fff;
-        color: #b0c5d8;
-        background: #1d3145;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-size: 1em; }
-    body .container .content2 {
-      grid-area: content2;
-      color: #fff;
-      font-family: "Open Sans", sans-serif;
-      margin-bottom: 50px; }
-      body .container .content2 h1 {
-        font-weight: 700;
-        padding: 20px 0; }
-      body .container .content2 li {
-        font-size: 0.8em;
-        color: #b0c5d8;
-        padding: 10px 0; }
-      body .container .content2 i {
-        margin-left: -13px;
-        padding-right: 5px; }
-      body .container .content2 input {
-        border: none;
-        padding: 10px 0;
-        border-bottom: 1px solid #fff;
-        color: #b0c5d8;
-        background: #1d3145;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-size: 1em; }
-    body .container .content3 {
-      grid-area: content3;
-      color: #fff;
-      font-family: "Open Sans", sans-serif;
-      margin-bottom: 50px; }
-      body .container .content3 h1 {
-        font-weight: 700;
-        padding: 20px 0; }
-      body .container .content3 li {
-        font-size: 0.8em;
-        color: #b0c5d8;
-        padding: 10px 0; }
-      body .container .content3 i {
-        margin-left: -13px;
-        padding-right: 5px; }
-      body .container .content3 input {
-        border: none;
-        padding: 10px 0;
-        border-bottom: 1px solid #fff;
-        color: #b0c5d8;
-        background: #1d3145;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-size: 1em; }
-    body .container .content4 {
-      grid-area: content4;
-      color: #fff;
-      font-family: "Open Sans", sans-serif;
-      margin-bottom: 50px; }
-      body .container .content4 h1 {
-        font-weight: 700;
-        padding: 20px 0; }
-      body .container .content4 li {
-        font-size: 0.8em;
-        color: #b0c5d8;
-        padding: 10px 0; }
-      body .container .content4 i {
-        margin-left: -13px;
-        padding-right: 5px; }
-      body .container .content4 input {
-        border: none;
-        padding: 10px 0;
-        border-bottom: 1px solid #fff;
-        color: #b0c5d8;
-        background: #1d3145;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-size: 1em; }
-    body .container .content5 {
-      grid-area: content5;
-      color: #fff;
-      font-family: "Open Sans", sans-serif;
-      margin-bottom: 50px; }
-      body .container .content5 h1 {
-        font-weight: 700;
-        padding: 20px 0; }
-      body .container .content5 li {
-        font-size: 0.8em;
-        color: #b0c5d8;
-        padding: 10px 0; }
-      body .container .content5 i {
-        margin-left: -13px;
-        padding-right: 5px; }
-      body .container .content5 input {
-        border: none;
-        padding: 10px 0;
-        border-bottom: 1px solid #fff;
-        color: #b0c5d8;
-        background: #1d3145;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-size: 1em; }
-    body .container .content6 {
-      grid-area: content6;
-      color: #fff;
-      font-family: "Open Sans", sans-serif;
-      margin-bottom: 50px; }
-      body .container .content6 h1 {
-        font-weight: 700;
-        padding: 20px 0; }
-      body .container .content6 li {
-        font-size: 0.8em;
-        color: #b0c5d8;
-        padding: 10px 0; }
-      body .container .content6 i {
-        margin-left: -13px;
-        padding-right: 5px; }
-      body .container .content6 input {
-        border: none;
-        padding: 10px 0;
-        border-bottom: 1px solid #fff;
-        color: #b0c5d8;
-        background: #1d3145;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-size: 1em; }
+    grid-template-columns: repeat 5, 1fr;
+    grid-template-areas: "quote text text text ." "quote . pseudo . ."; }
+    body .container .quote {
+      grid-area: quote;
+      align-self: top;
+      justify-self: end; }
+      body .container .quote img {
+        width: 80px; }
+    body .container .text {
+      grid-area: text;
+      justify-self: center;
+      padding: 20px; }
+      body .container .text p {
+        color: #333;
+        font-size: 1.85rem;
+        padding: 10px 80px;
+        font-family: "PT Sans", sans-serif;
+        text-align: center;
+        font-style: italic;
+        line-height: 1.5em; }
+      body .container .text a {
+        text-decoration: none;
+        color: #5CC18D; }
+    body .container .pseudo {
+      grid-area: pseudo;
+      justify-self: center;
+      display: grid;
+      grid-template-areas: "image description"; }
+      body .container .pseudo img {
+        grid-area: image;
+        width: 50px;
+        justify-self: right;
+        margin: 0 10px; }
+      body .container .pseudo .desc {
+        grid-area: description;
+        justify-self: left; }
+        body .container .pseudo .desc p {
+          letter-spacing: -0.11em;
+          font-size: 0.9rem;
+          color: #787878; }
+        body .container .pseudo .desc em {
+          margin-left: 15px;
+          font-style: italic;
+          font-size: 0.8rem;
+          color: #a0a0a0; }
 
 /*# sourceMappingURL=main.css.map */
