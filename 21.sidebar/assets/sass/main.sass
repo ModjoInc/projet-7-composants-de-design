@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400')
+$font1:    'Lato', sans-serif
+$font2:    'Roboto', sans-serif
+
+*, *:after, *:before
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+html
+  font-size: 12px
+body
+  background-color: #222
+  font-family: $font1
+  padding: 0 1rem
+
+  .container
+    width: 285px
+    margin: 90px auto
+    height: 462px
+    display: grid
+    grid-template-areas: "sidebar connect"
+    .sidebar
+      grid-area: sidebar
+      width: 67px
+      background-color: #271b28
+      @for $i from 1 through 5
+        .icon#{$i}
+          padding-top: 19px
+          text-align: center
+          color: #6b636c
+          img
+            display: block
+            margin: 0 auto
+          img:nth-child(2)
+            padding-top: 6px
+            display: inline-block
+          p
+            display: inline
+            font-family: $font2
+            font-weight: 700
+            font-size: 1.1rem
+      .icon1
+        img:nth-child(1)
+          margin: 0
+          border-left: 4px solid #938d93
+          padding-left: 13px
+
+      .state
+        text-align: center
+        .circle1, .circle2, .circle3
+          display: inline-block
+          margin-left: 4px
+          border-radius: 50%
+          width: 12px
+          height: 12px
+        .circle1
+          background-color: #ee5a54
+        .circle2
+          background-color: #f8bd32
+        .circle3
+          background-color: #61ca42
+    .connect
+      grid-area: connect
+      background-color: #4a344c
+      width: 218px
+      .base
+        .status
+          h2
+            color: #fff
+            font-family: $font2
+            font-size: 1.5rem
+            font-weight: 700
+          i
+            font-size: 0.8rem
+            color: #6b636c
+        .notification
+          i
+            color: #6b636c

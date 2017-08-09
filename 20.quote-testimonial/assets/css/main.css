@@ -4,10 +4,15 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  font-size: 17px; }
+
 body {
   background-color: #222;
-  font-family: "PT Sans", sans-serif; }
+  font-family: "PT Sans", sans-serif;
+  padding: 0 1rem; }
   body .container {
+    min-width: 300px;
     background-color: #fff;
     padding: 40px;
     display: grid;
@@ -48,7 +53,7 @@ body {
         grid-area: description;
         justify-self: left; }
         body .container .pseudo .desc p {
-          letter-spacing: -0.11em;
+          letter-spacing: -0.11rem;
           font-size: 0.9rem;
           color: #787878; }
         body .container .pseudo .desc em {

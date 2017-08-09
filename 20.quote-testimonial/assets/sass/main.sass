@@ -6,12 +6,15 @@ $font2:    'Roboto', sans-serif
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
-
+html
+  font-size: 17px
 body
   background-color: #222
   font-family: $font1
+  padding: 0 1rem
 
   .container
+    min-width: 300px
     background-color: #fff
     padding: 40px
     display: grid
@@ -53,7 +56,7 @@ body
         grid-area: description
         justify-self: left
         p
-          letter-spacing: -0.11em
+          letter-spacing: -0.11rem
           font-size: 0.9rem
           color: #787878
         em
