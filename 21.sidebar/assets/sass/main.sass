@@ -19,6 +19,7 @@ body
     height: 462px
     display: grid
     grid-template-areas: "sidebar connect"
+
     .sidebar
       grid-area: sidebar
       width: 67px
@@ -44,7 +45,6 @@ body
           margin: 0
           border-left: 4px solid #938d93
           padding-left: 13px
-
       .state
         text-align: center
         .circle1, .circle2, .circle3
@@ -59,20 +59,104 @@ body
           background-color: #f8bd32
         .circle3
           background-color: #61ca42
+
     .connect
+      padding-left: 10px
       grid-area: connect
       background-color: #4a344c
       width: 218px
+      color: #b7aeb7
+      font-family: $font1
       .base
+        padding: 10px
+        display: grid
+        grid-template-columns: 8fr 1fr
+        grid-template-areas: "status notification"
         .status
+          padding-top: 10px
+          grid-area: status
           h2
+            display: inline-block
             color: #fff
             font-family: $font2
             font-size: 1.5rem
             font-weight: 700
           i
-            font-size: 0.8rem
-            color: #6b636c
+            color: #9baeb7
+            padding-left: 5px
+            font-size: 0.7rem
+            vertical-align: middle
+          .user
+            padding-top: 5px
+            .circle4
+              display: inline-block
+              margin-left: 4px
+              border-radius: 50%
+              width: 9px
+              height: 9px
+              background-color: #f8bd32
+            .userName
+              display: inline-block
+              color: #7a697c
+          p
+            display: inline-block
         .notification
           i
-            color: #6b636c
+            padding-top: 1rem
+            color: #9baeb7
+            font-size: 1.3rem
+        .readStatus
+          padding-top: 20px
+          font-size: 1.3rem
+          div
+            padding-bottom: 10px
+          i,p
+            display: inline-block
+
+      .starred
+        padding: 10px
+        h3
+          font-size: 1.1rem
+          font-weight: 700
+        ul
+          padding-top: 10px
+          li
+            font-size: 1.3rem
+            margin-left: -0.5rem
+            line-height: 1.3rem
+            height: 2.3rem
+            i
+              font-size: 0.9rem
+              margin-top: 0.2rem
+          li:nth-child(n+5):nth-child(-n+8)
+            i
+              color: #ee5a54
+
+      .channels
+        padding: 40px 10px
+        display: grid
+        grid-template-columns: 8fr 1fr
+        grid-template-areas: "channel addChannel"
+        .channel
+          grid-area: channel
+        .addChannel
+          grid-area: addChannel
+          i
+            color: #9baeb7
+            margin-top: -0.5rem
+            font-size: 1.3rem
+        h3
+          font-size: 1.1rem
+          font-weight: 700
+        .openChannel
+          padding-top: 10px
+          ul
+            padding-left: 10px
+            li
+              font-size: 1.3rem
+              margin-left: -0.5rem
+              line-height: 1.3rem
+              height: 2.3rem
+              i
+                font-size: 0.9rem
+                margin-top: 0.2rem

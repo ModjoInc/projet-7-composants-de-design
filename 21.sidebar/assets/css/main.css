@@ -115,18 +115,100 @@ body {
         body .container .sidebar .state .circle3 {
           background-color: #61ca42; }
     body .container .connect {
+      padding-left: 10px;
       grid-area: connect;
       background-color: #4a344c;
-      width: 218px; }
-      body .container .connect .base .status h2 {
-        color: #fff;
-        font-family: "Roboto", sans-serif;
-        font-size: 1.5rem;
-        font-weight: 700; }
-      body .container .connect .base .status i {
-        font-size: 0.8rem;
-        color: #6b636c; }
-      body .container .connect .base .notification i {
-        color: #6b636c; }
+      width: 218px;
+      color: #b7aeb7;
+      font-family: "Lato", sans-serif; }
+      body .container .connect .base {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 8fr 1fr;
+        grid-template-areas: "status notification"; }
+        body .container .connect .base .status {
+          padding-top: 10px;
+          grid-area: status; }
+          body .container .connect .base .status h2 {
+            display: inline-block;
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700; }
+          body .container .connect .base .status i {
+            color: #9baeb7;
+            padding-left: 5px;
+            font-size: 0.7rem;
+            vertical-align: middle; }
+          body .container .connect .base .status .user {
+            padding-top: 5px; }
+            body .container .connect .base .status .user .circle4 {
+              display: inline-block;
+              margin-left: 4px;
+              border-radius: 50%;
+              width: 9px;
+              height: 9px;
+              background-color: #f8bd32; }
+            body .container .connect .base .status .user .userName {
+              display: inline-block;
+              color: #7a697c; }
+          body .container .connect .base .status p {
+            display: inline-block; }
+        body .container .connect .base .notification i {
+          padding-top: 1rem;
+          color: #9baeb7;
+          font-size: 1.3rem; }
+        body .container .connect .base .readStatus {
+          padding-top: 20px;
+          font-size: 1.3rem; }
+          body .container .connect .base .readStatus div {
+            padding-bottom: 10px; }
+          body .container .connect .base .readStatus i, body .container .connect .base .readStatus p {
+            display: inline-block; }
+      body .container .connect .starred {
+        padding: 10px; }
+        body .container .connect .starred h3 {
+          font-size: 1.1rem;
+          font-weight: 700; }
+        body .container .connect .starred ul {
+          padding-top: 10px; }
+          body .container .connect .starred ul li {
+            font-size: 1.3rem;
+            margin-left: -0.5rem;
+            line-height: 1.3rem;
+            height: 2.3rem; }
+            body .container .connect .starred ul li i {
+              font-size: 0.9rem;
+              margin-top: 0.2rem; }
+          body .container .connect .starred ul li:nth-child(n+5):nth-child(-n+8) i {
+            color: #ee5a54; }
+      body .container .connect .channels {
+        padding: 40px 10px;
+        display: grid;
+        grid-template-columns: 8fr 1fr;
+        grid-template-areas: "channel addChannel"; }
+        body .container .connect .channels .channel {
+          grid-area: channel; }
+        body .container .connect .channels .addChannel {
+          grid-area: addChannel; }
+          body .container .connect .channels .addChannel i {
+            color: #9baeb7;
+            margin-top: -0.5rem;
+            font-size: 1.3rem; }
+        body .container .connect .channels h3 {
+          font-size: 1.1rem;
+          font-weight: 700; }
+        body .container .connect .channels .openChannel {
+          padding-top: 10px; }
+          body .container .connect .channels .openChannel ul {
+            padding-left: 10px; }
+            body .container .connect .channels .openChannel ul li {
+              font-size: 1.3rem;
+              margin-left: -0.5rem;
+              line-height: 1.3rem;
+              height: 2.3rem; }
+              body .container .connect .channels .openChannel ul li i {
+                font-size: 0.9rem;
+                margin-top: 0.2rem; }
 
 /*# sourceMappingURL=main.css.map */
