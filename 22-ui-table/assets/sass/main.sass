@@ -31,94 +31,36 @@ body
     margin: 10px 5px
     padding: 10px 20px
     display: grid
-    grid-template-areas:
-    "caption" "head1" "head2" "row1" "row2" "row3" "row4" "row5" "row6" "line" "foot" 
-    .caption
-      grid-area: caption
-      h2
-        padding: 20px 0
-        font-family: $font1
-        font-weight: 400
-        font-size: 0.9em
-
-
-    @for $j from 1 to 3
-      .head#$j
+    grid-template-areas: "head" "row1" "row2" "row3" "row4" "row5" "row6" "row7" "row8" "row9" "row10" "line" "foot"
+    .head
+      display: grid
+      border-bottom: 0.5px solid #d9d9d9
+      padding-bottom: 20px
+      padding-top: 20px
+      grid-template-columns: 3fr 1fr 1fr
+      grid-template-areas: "cell1 cell2 cell3"
+      @for $j from 1 through 3
+        .cell#{$j}
+          grid-area: cell#{$j}
+          font-size: 0.9em
+        .cell2,.cell3
+          text-align: right
+    @for $i from 1 through 10
+      .row#{$i}
         display: grid
-        font-weight: 300
-        grid-area: head#$j
-        border-top: 0.5px solid #d9d9d9
-        grid-template-areas:
-        "cell1 cell2 cell3 cell4 cell5 cell6 cell7"
-        @for $k from 1 to 8
-          .cell#$k
-            grid-area: cell#$k
-            padding: 10px 0
-            font-size: 0.8em
-            width: 50px
-            text-align: center
-
-          .cell1
-            text-align: left
-            width: 110px
-
-
-
-      .head2
-        color: #000
+        grid-area: row#{$i}
         border-bottom: 0.5px solid #d9d9d9
-        font-weight: 400
-
-
-    @for $i from 1 to 7
-      .row#$i
-        display: grid
-        grid-area: row#$i
-        border-bottom: 0.5px solid #d9d9d9
-        grid-template-areas:
-        "cell0 cell1 cell2 cell3 cell4 cell5 cell6"
-        @for $k from 0 to 7
-          .cell#$k
-            grid-area: cell#$k
+        grid-template-columns: 3fr 1fr 1fr
+        grid-template-areas: "cell0 cell1 cell2"
+        @for $k from 0 through 2
+          .cell#{$k}
+            grid-area: cell#{$k}
             color: #000
-            padding: 10px 0
+            padding: 5px 0
             margin: 1px 0
-            width: 55px
             font-size: 0.8em
-
-
-        .cell0
-          width: 110px
-          text-align: left
-
-        .cell1
-          background-color: #3171d3
-
-
-
-    .row1 .cell2,
-    .row1 .cell3,
-    .row2 .cell2,
-    .row5 .cell2
-      background-color: #458cf1
-
-
-    .row1 .cell4,
-    .row1 .cell5,
-    .row1 .cell6,
-    .row2 .cell5,
-    .row4 .cell2,
-    .row4 .cell3
-      background-color: #74a8f4
-
-    .row2 .cell3,
-    .row2 .cell4,
-    .row3 .cell2,
-    .row3 .cell4
-      background-color: #a3c4f7
-
-    .row3 .cell3
-      background-color: #d1e1fb
+          .cell1,.cell2
+            text-align: right
 
     .line
       hr
